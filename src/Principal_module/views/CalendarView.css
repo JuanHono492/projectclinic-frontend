@@ -1,0 +1,116 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Contenedor principal */
+.calendar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titulo de la sección */
+.appointments-list h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4a90e2;
+}
+
+/* Estilos para el listado de citas */
+.appointments-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Estilo para cada cita (tarjeta) */
+.appointments-list li {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para las tarjetas */
+.appointments-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Detalles de cada cita */
+.appointment-details {
+    font-size: 1rem;
+    color: #333;
+}
+
+.appointment-details .detail-item {
+    margin-bottom: 10px;
+}
+
+.appointment-details .detail-item strong {
+    font-weight: 600;
+    color: #4a90e2;
+}
+
+/* Estilo para el fondo */
+.appointments-list ul {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Botón flotante para crear cita */
+.floating-create-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-create-button:hover {
+    background-color: #218838;
+}
+
+.floating-create-button:active {
+    transform: scale(0.95);
+}
+
+/* CalendarView.css */
+
+.search-filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-filters input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}

@@ -1,0 +1,146 @@
+/* Configuración General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F3F6F9;
+  color: #333;
+}
+
+/* Contenedor Principal */
+.inicio-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Columna Izquierda: Formulario de Inicio de Sesión */
+.inicio-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 40px;
+}
+
+/* Caja de Login */
+.login-box {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #467fcf; /* Azul pastel oscuro */
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los Campos de Entrada */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #D1E3F8;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #F9FAFB;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+  border-color: #467fcf;
+  outline: none;
+}
+
+/* Mensaje de Error */
+.error-text {
+  color: #FF4D4F;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Contenedor del Botón */
+.button-container {
+  margin-top: 20px;
+}
+
+/* Estilo del Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #467fcf;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 70, 150, 0.2);
+}
+
+button:hover {
+  background-color: #3b6bb0;
+  transform: scale(1.02);
+}
+
+button:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+/* Columna Derecha: Espacio para Logo o Imagen */
+.inicio-right {
+  flex: 1;
+  background-color: #e6f1f8; /* Fondo azul claro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-image {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Pie de Página */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #9CA3AF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inicio-container {
+      flex-direction: column;
+  }
+
+  .inicio-right {
+      display: none; /* Oculta la columna derecha en pantallas pequeñas */
+  }
+
+  .login-box {
+      max-width: 90%;
+      padding: 20px;
+  }
+}

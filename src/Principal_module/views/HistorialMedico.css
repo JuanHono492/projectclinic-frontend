@@ -1,0 +1,49 @@
+/* Contenedor principal */
+.historial-form-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de la tabla del historial médico */
+.medical-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.medical-history-table th,
+.medical-history-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.medical-history-table th {
+    background-color: #f4f4f4;
+}
+
+/* Estilos generales para la tabla */
+.medical-history-table td {
+    font-size: 14px;
+}
+
+.medical-history-table button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.medical-history-table button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
